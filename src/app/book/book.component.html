@@ -1,0 +1,13 @@
+<h1>Books Available</h1>
+<hr>
+{{resp}}
+<tr>
+    <th *ngFor = "let column of headers">
+        {{column}}
+      </th>
+</tr>
+<tr *ngFor = "let row of books">
+    <td *ngFor = "let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
